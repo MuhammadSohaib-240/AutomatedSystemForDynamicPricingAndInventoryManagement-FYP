@@ -1,0 +1,162 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00193b;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.left-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 65px;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100%; /* Adjust this value to control the image width */
+    max-height: 65vh; /* Adjust this value to control the image height */
+    width: auto;
+    height: auto;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: #031123;
+    width: 50%;
+    min-height: 100vh;
+}
+
+.right-container > .details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-container > .details > p {
+    font-size: 16px;
+}
+
+.right-container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+
+label {
+    color: #8d8d99;
+    font-size: 14px;
+}
+
+form > h3,.navigation-link > .link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: large;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+form > h3::after,.navigation-link > .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Change this to your desired underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+form > h3:hover,.navigation-link > .link:hover {
+    color: #007bff; /* Change this to your desired hover color */
+}
+
+form > h3:hover::after,.navigation-link > .link:hover::after {
+    width: 100%;
+}
+
+.navigation-link > .link {
+    text-decoration: none;
+    font-size: medium;
+}
+
+.submit-button {
+    padding: 13px;
+    width: 100%;
+    background-color: #00ba9d;
+    color: #ffffff;
+    border: 1px solid #00ba9d;
+    box-shadow: 0 1px 10px #02caab59;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #02a189
+}
+
+.navigation-link {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.navigation-link > h3, label {
+    font-size: medium;
+}
+
+/* Original CSS */
+
+/* Add a media query to hide the left container on smaller screens */
+@media (max-width: 760px) {
+    .login-page {
+      flex-direction: column-reverse;
+      align-items: center; /* Center the content vertically */
+    }
+  
+    .left-container {
+      display: none;
+    }
+  
+    .right-container {
+      width: 100%;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
+  /* Rest of your existing CSS */

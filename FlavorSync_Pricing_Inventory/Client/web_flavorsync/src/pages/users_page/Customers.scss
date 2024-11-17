@@ -1,0 +1,105 @@
+.customers-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 25px;
+    overflow-x: none;
+
+    .row1 {
+        margin-top: 25px;
+        width: 95%;
+
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            width: 100%;
+            min-height: max-content;
+
+            .filters-wrapper {
+                flex: 1;
+                display: flex;
+                gap: 0.5rem;
+            }
+
+            .buttons-wrapper {
+                display: flex;
+                gap: 10px;
+                border: none;
+            
+                button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 44px;
+                    border-radius: 23px;
+                    gap: 10px;
+                    line-height: 1;
+                    font-size: 16px;
+                    font-weight: 600;
+                    padding: 0 26px;
+                    transition: 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+            
+                .submit-button {
+                    background-color: #4F89FC;
+                    color: #fff;
+                    border: 1px solid #4F89FC;
+            
+                    &:hover {
+                        background-color: #035ECF;
+                        border: 1px solid #035ECF;
+                        box-shadow: 0 1px 8px #035ecf80;
+                    }
+                }
+            
+                .clear-button {
+                    background-color: #031123;
+                    border: 1px solid #4F89FC;
+                    color: #4F89FC;
+            
+                    &:hover {
+                        background-color: #4F89FC;
+                        color: #fff;
+                        border: 1px solid #4F89FC;
+                    }
+                }
+            }  
+        }
+    }
+
+    .row2 {
+        margin-top: 50px;
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .customers-component {
+        .title {
+            width: 95%;
+        }
+        
+        .row1 {
+            .container {
+                flex-wrap: wrap;
+        
+                .filters-wrapper {
+                    flex-wrap: wrap;
+                }
+        
+                .buttons-wrapper {
+                    width: 100%;
+                    
+                    button {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.card {
+    border-radius: 8px;
+    background-color: #031123;
+    padding: 26px;
+    box-shadow: 0px 3px 14px #00285D;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 14px 0 rgba(0,66,154,1);
+    }
+
+    &::-webkit-scrollbar {
+        height: 0.2em;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #001d46;
+        outline: none;
+    }
+}

@@ -1,0 +1,134 @@
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.registration-inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  max-height: 90vh;
+  background-color: #031123;
+  border-radius: 8px;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+  
+.registration-inner-container::-webkit-scrollbar {
+    width: 0.2em;
+    height: 0.2em; /* Add height for horizontal scrollbar */
+  }
+  
+  .registration-inner-container::-webkit-scrollbar-thumb {
+    background-color: #959595;
+    border-radius: 4px;
+  }
+  
+  .registration-inner-container::-webkit-scrollbar-track {
+    background-color: #031123;
+  }
+  
+  .registration-inner-container::-webkit-scrollbar-thumb:horizontal {
+    background-color: #959595; /* Apply thumb color to horizontal scrollbar */
+  }
+  
+  .registration-inner-container::-webkit-scrollbar-track:horizontal {
+    background-color: #031123; /* Apply track color to horizontal scrollbar */
+  }
+  
+
+.registration-inner-container > h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 100;
+    color: #ffffff;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+
+.registration-inner-container > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 2.5%;
+    height: 3px;
+    background-color: #007bff; /* Change this to your desired underline color */
+    transition: width 0.3s ease-in-out;
+}
+
+.general-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.general-info-container > h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.address-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.address-info-container > h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.details-fields {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 30px 0 30px;
+  }
+
+.registration-inner-container > .button-field {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-field > .submit-button {
+    padding: 12px;
+    width: 50%;
+    background-color: #00ba9d;
+    color: #ffffff;
+    border: 1px solid #00ba9d;
+    box-shadow: 0 1px 10px #02caab59;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-field > .submit-button:hover {
+    background-color: #02a189
+}
+
+@media screen and (max-width: 1025px) {
+  .registration-inner-container {
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  .details-fields {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

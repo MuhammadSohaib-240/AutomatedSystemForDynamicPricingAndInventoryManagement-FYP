@@ -1,0 +1,55 @@
+.settings-component {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 30px;
+    width: 100%;
+    justify-items: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow-x: hidden;
+    margin-bottom: 25px;
+    
+    h4 {
+        font-weight: 400;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        width: 95%;
+
+        .basic-details-column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 25%;
+        }
+
+        .form-column{
+            width: 75%;
+            height: max-content;
+        }        
+    }
+}
+
+@media (max-width: 768px) {
+    .settings-component {
+    
+        .container {
+            flex-direction: column; /* Change to column layout */
+            align-items: center; /* Center content horizontally */
+            width: 100%;
+    
+            .basic-details-column {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 30px;
+                width: 100%;
+            }
+    
+            .form-column{
+                width: 100%;
+            }        
+        }
+    }
+}

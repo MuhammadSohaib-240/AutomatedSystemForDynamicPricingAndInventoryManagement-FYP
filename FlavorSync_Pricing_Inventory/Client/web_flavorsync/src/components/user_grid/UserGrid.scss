@@ -1,0 +1,142 @@
+.user-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .pagination {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            background-color: transparent;
+            color: #00ba9d;
+            border: 1px solid #00ba9d;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #00ba9d;
+                color: #031123;
+            }
+        }
+    }
+
+    .card-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        row-gap: 40px;
+        height: 100%;
+
+        .user-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 8px;
+            background-color: #031123;
+            padding: 25px 16px;
+            box-shadow: 0px 3px 14px #00285D;
+            transition: 0.3s;
+
+            &:hover {
+                box-shadow: 0 0 14px 0 rgba(0,66,154,1);
+            }
+
+            .user-image {
+                img {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .user-details {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+
+                h3 {
+                    color: #ffffff;
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: .875rem;
+                }
+
+                .status-false {
+                    color: red;
+                }
+
+                .status-true {
+                    color: #00ba9d;
+                }
+            }
+
+            .user-actions {
+                display: flex;
+                gap: 20px;
+
+                button {
+                    width: 120px;
+                    height: 38px;
+                    border-radius: 23px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: 0.3s ease-in-out;
+                }
+
+                .edit-button {
+                    color: #4F89FC;
+                    background-color: transparent;
+                    border: 1px solid #4F89FC;
+                        
+                    &:hover {
+                        color: #fff;
+                        background-color: #4F89FC;
+                    }
+                }
+
+                .delete-button {
+                    color: #FF5470;
+                    background-color: transparent;
+                    border: 1px solid #FF5470;
+                        
+                    &:hover {
+                        color: #fff;
+                        background-color: #FF5470;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 350px)  {
+    .user-grid {
+
+        .card-grid {
+    
+            .user-card {
+                width: 95%;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    padding: 20px;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    color: #4f89fc;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+  
+.search-input {
+    flex: 1;
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    background-color: #00193b;
+    color: #ffffff;
+    border: 1px solid #354585;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.search-input:hover, .search-input:focus {
+    border: 1px solid #4F89FC;
+}
+  
+.search-input {
+    padding-right: 30px; /* Adjust this value to control the space for the icon */
+}
+  
+.search-icon {
+    color: #4f89fc;
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust this value to control the horizontal position of the icon */
+    transform: translateY(-50%);
+}
+
+.profile-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #4F89FC;
+    font-weight: 400;
+    color: black;
+}
+
+.profile-icon > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    width: min-content;
+}
+
+.notification-icon, .comment-icon {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+}
+  
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background-color: #ff5470;
+    color: #372546;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.comment-badge {
+    background-color: #00ba9d;
+}
+
+@media (max-width: 480px) {
+    .search-bar > input {
+        display: none;
+    }
+
+    .search-bar > .search-icon {
+        display: none;
+    }
+}

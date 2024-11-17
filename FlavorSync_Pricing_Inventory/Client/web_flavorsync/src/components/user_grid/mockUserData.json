@@ -1,0 +1,47 @@
+[
+	{
+	  "id": "1",
+	  "name": "John Smith",
+	  "blockStatus": "UNBLOCKED",
+	  "verificationStatus": "VERIFIED",
+	  "activeStatus": "ACTIVE",
+	  "imageName": "",
+	  "imageSrc": ""
+	},
+	{
+	  "id": "2",
+	  "name": "Emily Johnson",
+	  "blockStatus": "BLOCKED",
+	  "verificationStatus": "UNVERIFIED",
+	  "activeStatus": "INACTIVE",
+	  "imageName": "",
+	  "imageSrc": ""
+	},
+	{
+	  "id": "3",
+	  "name": "Michael Davis",
+	  "blockStatus": "UNBLOCKED",
+	  "verificationStatus": "VERIFIED",
+	  "activeStatus": "ACTIVE",
+	  "imageName": "",
+	  "imageSrc": ""
+	},
+	{
+	  "id": "4",
+	  "name": "Sophia Miller",
+	  "blockStatus": "BLOCKED",
+	  "verificationStatus": "UNVERIFIED",
+	  "activeStatus": "INACTIVE",
+	  "imageName": "",
+	  "imageSrc": ""
+	},
+	{
+	  "id": "5",
+	  "name": "Daniel Taylor",
+	  "blockStatus": "UNBLOCKED",
+	  "verificationStatus": "VERIFIED",
+	  "activeStatus": "ACTIVE",
+	  "imageName": "",
+	  "imageSrc": ""
+	}
+  ]

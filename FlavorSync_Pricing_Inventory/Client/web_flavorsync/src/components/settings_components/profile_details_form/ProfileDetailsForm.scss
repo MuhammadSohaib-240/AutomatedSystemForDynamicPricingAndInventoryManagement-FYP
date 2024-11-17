@@ -1,0 +1,113 @@
+.profile-details-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    h5 {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #fff;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form-grid {
+        display: flex;
+        gap: 1.25rem;
+        width: 100%;
+
+        .basic-info-grid {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            gap: 1rem;
+            width: 50%;
+        }
+
+        .address-grid {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            gap: 1rem;
+            width: 50%;
+        }
+    }
+
+    .update-changepassword-buttons {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        .change-password-text-button {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1;
+            color: #3f71d1;
+            position: relative;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background-color: transparent;
+            background-image: none;
+            text-transform: none;
+            cursor: pointer;
+            border: none;
+        }
+
+        .update-info-button {
+            padding: 12px 70px;
+            width: fit-content;
+            background-color: #00ba9d;
+            color: #ffffff;
+            border: 1px solid #00ba9d;
+            box-shadow: 0 1px 10px #02caab59;
+            outline: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            
+            &:hover {
+                background-color: #02a189;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-details-form {
+        align-items: center;
+
+        form {
+            align-items: center;
+        }
+    
+        .form-grid {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            .basic-info-grid, .address-grid {
+                min-width: 90%;
+            }
+    
+            .update-changepassword-buttons {
+                align-items: center;
+            }
+        }
+        
+        .update-changepassword-buttons {
+            align-items: center;
+        }
+
+    }
+}

@@ -1,0 +1,25 @@
+.form-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    label {
+        color: #8d8d99;
+        font-size: 14px;
+    }
+
+    input {
+        padding: 15px;
+        background-color: #00193b;
+        color: #ffffff;
+        border: 1px solid #354585;
+        outline: none;
+        border-radius: 8px;
+        transition: 0.3s;
+
+        &:hover, &:focus {
+            border: 1px solid #4F89FC;
+        }
+    }
+}

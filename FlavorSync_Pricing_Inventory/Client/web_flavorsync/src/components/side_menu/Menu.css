@@ -1,0 +1,83 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: #031123;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease-in-out;
+    overflow-y: scroll; /* Make the menu content scrollable */
+    z-index: 30;
+}
+
+.menu::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+.menu::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #001d46;
+    outline: none;
+}
+
+.menu.open {
+    left: 0; /* Slide in when open */
+}
+
+.menu-content {
+    position: relative;
+    height: 100%;
+    padding: 60px 20px 5px 20px;
+}
+
+.logo-close-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    font-size: 24px;
+    color: #4f89fc;
+    cursor: pointer;
+    width: 100%;
+}
+
+.logo-close-container > .logo > h1 {
+    font-size: xx-large;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 45px;
+    list-style-type: none;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.menu-list > li {
+    border-radius: 10px;
+    transition: 0.1s ease-in;
+}
+
+.menu-list > li .link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-list > li:hover {
+    background-color: #001d46;
+}

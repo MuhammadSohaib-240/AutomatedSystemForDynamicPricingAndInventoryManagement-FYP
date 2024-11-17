@@ -1,0 +1,36 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .location-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        min-height: max-content;
+        width: fit-content;
+
+        .icon {
+            color: #4f89fc;
+            font-size: 20px;
+        }
+
+        h4 {
+            color: #fff;
+            font-size: 16px;
+            word-break: break-all;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .location {
+        align-items: flex-start;
+
+        .location-container {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+    }
+}
